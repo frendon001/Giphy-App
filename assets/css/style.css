@@ -1,0 +1,15 @@
+.main-content {
+	padding: 20px 50px 20px 50px;
+}
+
+.topic-btn {
+	margin: 5px;
+	background: #ffffff;
+	border: 1px solid #28B463;
+	color: #28B463;
+}
+
+.topic-btn:hover {
+	background: #28B463;
+	color: #ffffff;
+}
