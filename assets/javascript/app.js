@@ -15,26 +15,26 @@ function displayTopics() {
 		method: "GET"
 	}).done(function(response) {
 		var topicResults = response.data;
-
+		//loop through all the results from the API
 		for (var i = 0; i < topicResults.length; i++) {
-			// Div to hold topic item
+			//New Div to hold topic item
 			var topicItemDiv = $("<div class='topic-gif-item card'>");
+			//New P element to hold rating
 			var topicRatingP = $("<p>").text("Rating: " + topicResults[i].rating.toUpperCase());
+			//New Img element to hold the gif
 			var topicImage = $("<img class='card-img'>").attr("src", topicResults[i].images.fixed_height_still.url);
+			//Add data required to toggle from still to animated to img element
 			topicImage.attr("data-animate", topicResults[i].images.fixed_height.url)
 				.attr("data-still", topicResults[i].images.fixed_height_still.url)
 				.attr("data-state", "still");
-
+			//New div to place gif within bootstrap card structure
 			var topicCard = $("<div class='card-body'>");
+			//Create bootstrap structure with newly created elments
 			topicCard.append(topicRatingP);
 			topicItemDiv.append(topicImage).append(topicCard);
-
+			//Add card to html on page
 			$("#topic-gifs").prepend(topicItemDiv);
-
 		}
-
-
-
 	});
 
 }
@@ -70,11 +70,6 @@ function newTopicButton() {
 	//Display new list of buttons
 	createTopicButtons();
 
-	// var newBtn = $("<button>");
-	// newBtn.addClass("topic-btn btn").attr("data-topic", newTopic).text(newTopic);
-	// // Add the button to the topic-btns div
-	// $("#topic-btns").append(newBtn);
-
 	//clear content from input box
 	$("#topics-input").val("");
 };
@@ -99,8 +94,9 @@ function toggleGif() {
 	}
 };
 
-
-
+// ***
+// *Functions and event listeners used to run the app
+// ***
 
 // Call function to create buttons from initial static array
 createTopicButtons();
