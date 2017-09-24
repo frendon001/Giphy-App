@@ -1,6 +1,21 @@
+.background-page {
+	background: url("../images/pw_pattern.png") ;
+
+	color: #373D3F;
+	margin-bottom: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+}
+
 .main-content {
 	padding: 20px 50px 20px 50px;
 }
+
+.header-row{
+	margin-bottom: 20px;
+	border-bottom: 2px solid #333333;
+}
+
 
 .topic-btn {
 	margin: 5px;
@@ -12,4 +27,44 @@
 .topic-btn:hover {
 	background: #28B463;
 	color: #ffffff;
+}
+
+#topic-form {
+	margin: 20px 0px 20px 0px;
+/*	background-color: #4d4d4d;
+	height: 60px;*/
+}
+
+
+#topic-form label{
+	font-size: 22px;
+
+}
+
+#topics-input {
+	font-size: 14px;
+	width: 200px;
+}
+
+#results-header{
+	font-size: 24px;
+	border-top: 2px solid #333333;
+}
+
+.card {
+	width: 18rem;
+	height: 15rem;
+}
+.card-body {
+	padding: 10px;
+	text-align: center;
+/*	background-color: #488214;
+	color: #ffffff;*/
+}
+.card-body p {
+	margin: 0px;
+}
+.topic-gif-item {
+	float: left;
+
 }
