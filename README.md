@@ -1,6 +1,6 @@
 # Giphy-App
 
-I created a Diney Movie themed gifphy app
+I created a Diney Movie themed gif app that uses the Giphy API.
 
 ## Working Link
  - https://frendon001.github.io/Giphy-App/
