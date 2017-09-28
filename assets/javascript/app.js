@@ -94,6 +94,13 @@ function toggleGif() {
 	}
 };
 
+function clearResults() {
+
+
+	$("#topic-gifs").empty();
+	
+};
+
 // ***
 // *Functions and event listeners used to run the app
 // ***
@@ -106,4 +113,12 @@ $(document).on("click", ".topic-btn", displayTopics);
 
 // Event listener to add-topic
 $("#add-topic").on("click", newTopicButton.bind(this));
+
+// Event listener to clear results
+$("#clear-gifs").on("click", clearResults);
+
+//Event listener for gif toggle
 $(document).on("click", ".card-img", toggleGif);
+
+
+

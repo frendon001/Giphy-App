@@ -1,6 +1,6 @@
 # Giphy-App
 
-I created a theme based gifphy 
+I created a Diney Movie themed gifphy app
 
 ## Working Link
  - https://frendon001.github.io/Giphy-App/
@@ -10,6 +10,8 @@ I created a theme based gifphy
 Select the working link above to navigate to the app. Then use the pre-built topic buttons to populate still gifs in groups of 10. New topic buttons can be added on the page by using add Disney Movie functionality. 
 
 Once the gifs are on the page you can animate them by clicking on the gifs. Click the gifs to toggle between pausing and animating gifs.
+
+![My Giphy App](/assets/images/MyAPP.png)
 
 
 ## Requirements
